@@ -1,9 +1,19 @@
 # 🎓 Cognitive Skills & Student Performance Dashboard  
 
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Recharts](https://img.shields.io/badge/Recharts-2.8-orange)](https://recharts.org/)
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://igebra-cognitive-skills-dashboard-u.vercel.app/)
+[![Author](https://img.shields.io/badge/Made%20with%20❤️%20by-Jyothi%20Chowdary-red)](https://github.com/JyothiChowdaryB1165)
+
 An interactive web application and machine learning project that analyzes student cognitive skills, predicts performance, and identifies learning personas using clustering.  
 
-🌐 **Live Demo:** https://igebra-cognitive-skills-dashboard-u.vercel.app/
-📂 **GitHub Repo:**   https://github.com/JyothiChowdaryB1165/igebra-cognitive-skills-dashboard.git
+🌐 **Live Demo:** https://igebra-cognitive-skills-dashboard-u.vercel.app/  
+📂 **GitHub Repo:** https://github.com/JyothiChowdaryB1165/igebra-cognitive-skills-dashboard  
 
 ---
 
@@ -36,7 +46,7 @@ An interactive web application and machine learning project that analyzes studen
 
 ### 1. Clone & Install  
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/JyothiChowdaryB1165/igebra-cognitive-skills-dashboard.git
 cd igebra-cognitive-skills-dashboard
 npm install
 ```
@@ -113,7 +123,7 @@ igebra-cognitive-skills-dashboard/
 
 ## 👨‍💻 Author  
 
-**JYOTHI CHOWDARY**  
+**Jyothi Chowdary**  
 - GitHub: https://github.com/JyothiChowdaryB1165  
 - Project: Cognitive Skills & Student Performance Dashboard  
 
