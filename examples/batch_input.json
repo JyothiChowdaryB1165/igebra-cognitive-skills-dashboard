@@ -1,0 +1,26 @@
+[
+  {
+    "student_id": "STU0001",
+    "comprehension": 85.2,
+    "attention": 78.5,
+    "focus": 82.1,
+    "retention": 79.8,
+    "engagement_time": 180
+  },
+  {
+    "student_id": "STU0002",
+    "comprehension": 65.3,
+    "attention": 70.2,
+    "focus": 68.7,
+    "retention": 72.1,
+    "engagement_time": 120
+  },
+  {
+    "student_id": "STU0003",
+    "comprehension": 92.1,
+    "attention": 88.9,
+    "focus": 90.5,
+    "retention": 87.3,
+    "engagement_time": 220
+  }
+]
