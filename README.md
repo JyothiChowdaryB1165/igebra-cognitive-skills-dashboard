@@ -8,7 +8,6 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://igebra-cognitive-skills-dashboard-u.vercel.app/)
-[![Author](https://img.shields.io/badge/Made%20with%20❤️%20by-Jyothi%20Chowdary-red)](https://github.com/JyothiChowdaryB1165)
 
 An interactive web application and machine learning project that analyzes student cognitive skills, predicts performance, and identifies learning personas using clustering.  
 
