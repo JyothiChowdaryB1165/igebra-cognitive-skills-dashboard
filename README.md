@@ -3,7 +3,7 @@
 An interactive web application and machine learning project that analyzes student cognitive skills, predicts performance, and identifies learning personas using clustering.  
 
 🌐 **Live Demo:** https://igebra-cognitive-skills-dashboard-u.vercel.app/
-📂 **GitHub Repo:**   
+📂 **GitHub Repo:**   https://github.com/JyothiChowdaryB1165/igebra-cognitive-skills-dashboard.git
 
 ---
 
@@ -113,8 +113,8 @@ igebra-cognitive-skills-dashboard/
 
 ## 👨‍💻 Author  
 
-**Your Full Name**  
-- GitHub: [@yourusername](https://github.com/yourusername)  
+**JYOTHI CHOWDARY**  
+- GitHub: https://github.com/JyothiChowdaryB1165  
 - Project: Cognitive Skills & Student Performance Dashboard  
 
 ---
