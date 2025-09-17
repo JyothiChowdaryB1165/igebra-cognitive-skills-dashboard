@@ -1,122 +1,128 @@
-# Cognitive Skills & Student Performance Dashboard
+# 🎓 Cognitive Skills & Student Performance Dashboard  
 
-A comprehensive data science and web development project that analyzes student cognitive skills and predicts academic performance using machine learning.
+An interactive web application and machine learning project that analyzes student cognitive skills, predicts performance, and identifies learning personas using clustering.  
 
-## Project Structure
+🌐 **Live Demo:** https://igebra-cognitive-skills-dashboard-u.vercel.app/
+📂 **GitHub Repo:**   
 
-\`\`\`
-cognitive-skills-dashboard/
-├── data/
-│   └── students.csv                 # Synthetic student dataset
-├── notebooks/
-│   ├── analysis.ipynb              # Complete data analysis notebook
-│   └── analysis.pdf                # Exported analysis report
-├── models/
-│   ├── final_model.pkl             # Trained ML model
-│   └── model_info.pkl              # Model metadata
-├── src/
-│   └── predict.py                  # ML prediction script
-├── scripts/
-│   ├── generate_dataset.py         # Dataset generation
-│   └── test_prediction.py          # Prediction testing
-├── examples/
-│   ├── sample_input.json           # Single prediction example
-│   └── batch_input.json            # Batch prediction example
-├── dashboard/                      # Next.js dashboard (coming next)
-└── README.md
-\`\`\`
+---
 
-## Features
+## ✨ Key Features  
 
-### 📊 Data Analysis
-- **Synthetic Dataset**: 500 student records with realistic correlations
-- **Statistical Analysis**: Correlation analysis, significance testing
-- **Machine Learning**: Linear Regression and Random Forest models
-- **Student Clustering**: K-means clustering to identify student personas
+### 🧠 Cognitive & ML Analysis  
+- **Synthetic Dataset**: 500+ student records with realistic correlations.  
+- **Prediction Models**: Random Forest Regressor (better accuracy than Linear Regression).  
+- **Clustering**: K-means algorithm groups students into 4 learning personas.  
+- **Feature Importance**: Comprehension & retention are strongest predictors of performance.  
 
-### 🤖 ML Prediction System
-- **Trained Model**: Random Forest Regressor for assessment score prediction
-- **Prediction API**: Python script for single and batch predictions
-- **Input Validation**: Comprehensive data validation and error handling
-- **Feature Importance**: Analysis of which cognitive skills matter most
+### 📊 Interactive Dashboard (Next.js + Tailwind + Recharts)  
+- **Overview Stats**: Average scores, skills, and performance.  
+- **Charts**:  
+  - Bar → Skill vs. Score  
+  - Scatter → Attention vs. Performance  
+  - Radar → Student cognitive profile  
+- **Student Table**: Searchable & sortable records.  
+- **Insights Section**: Key findings and AI-driven observations.  
 
-### 📈 Student Personas
-- **High Achievers**: Excellent across all metrics
-- **Struggling Learners**: Need intensive support
-- **Average Performers**: Balanced profile with improvement potential
-- **Focused Specialists**: Strong in specific areas
+### 📈 Learning Personas  
+- 🌟 **High Achievers**: Excellent across all metrics.  
+- ⚖️ **Average Performers**: Balanced profile with improvement potential.  
+- 📚 **Focused Specialists**: Strong in specific skills but weaker in others.  
+- 🆘 **Struggling Learners**: Need targeted support.  
 
-## Quick Start
+---
 
-### 1. Generate Dataset
-\`\`\`bash
-python scripts/generate_dataset.py
-\`\`\`
+## 🚀 Quick Start  
 
-### 2. Run Analysis
-Open and run `notebooks/analysis.ipynb` to:
-- Explore the dataset
-- Train ML models
-- Identify student personas
-- Export trained model
+### 1. Clone & Install  
+```bash
+git clone <your-repo-link>
+cd igebra-cognitive-skills-dashboard
+npm install
+```
 
-### 3. Make Predictions
+### 2. Run Dashboard  
+```bash
+npm run dev
+```
+Visit → `http://localhost:3000`  
 
-**Single Student Prediction:**
-\`\`\`bash
-python src/predict.py '{"comprehension": 75, "attention": 80, "focus": 78, "retention": 82, "engagement_time": 150}'
-\`\`\`
+### 3. Data Analysis (Python ML)  
+```bash
+# Generate synthetic dataset
+python scripts/generate_dataset.py  
 
-**From JSON File:**
-\`\`\`bash
+# Run Jupyter notebook
+jupyter notebook notebooks/analysis.ipynb
+```
+
+### 4. Make Predictions  
+```bash
 python src/predict.py examples/sample_input.json
-\`\`\`
+```
 
-**Batch Prediction:**
-\`\`\`bash
-python src/predict.py examples/batch_input.json results.json
-\`\`\`
+---
 
-### 4. Test the System
-\`\`\`bash
-python scripts/test_prediction.py
-\`\`\`
+## 📁 Project Structure  
 
-## Input Format
+```
+igebra-cognitive-skills-dashboard/
+├── app/              # Next.js routes (dashboard pages)
+├── components/       # Reusable UI components
+├── examples/         # Example inputs for ML prediction
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+├── notebooks/        # Jupyter notebooks (analysis & ML)
+├── public/           # Static assets
+├── scripts/          # Dataset generation & testing
+├── src/              # Prediction scripts / API logic
+├── styles/           # Tailwind & global CSS
+├── package.json      # Dependencies
+└── README.md         # Project documentation
+```
 
-The prediction system expects JSON input with these fields:
+---
 
-\`\`\`json
-{
-  "comprehension": 75.5,    // 0-100 scale
-  "attention": 82.0,        // 0-100 scale  
-  "focus": 78.3,           // 0-100 scale
-  "retention": 80.1,       // 0-100 scale
-  "engagement_time": 150   // minutes per week (30-300)
-}
-\`\`\`
+## 📊 Model Performance  
 
-## Model Performance
+- **Algorithm**: Random Forest Regressor  
+- **Metrics**: MAE, RMSE, R² with residual analysis  
+- **Top Predictors**: Comprehension, Retention  
+- **Clustering**: Distinct personas validated with silhouette score  
 
-- **Algorithm**: Random Forest Regressor
-- **Features**: Comprehension, Attention, Focus, Retention, Engagement Time
-- **Metrics**: MAE, RMSE, R² score with residual analysis
-- **Feature Importance**: Comprehension and retention are top predictors
+---
 
-## Next Steps
+## 🔎 Insights & Findings  
 
-- [ ] Build Next.js dashboard with interactive charts
-- [ ] Create API endpoints for real-time predictions
-- [ ] Add submission system with GitHub Actions
-- [ ] Deploy to production environment
+- Comprehension & Retention most strongly drive academic outcomes.  
+- Engagement Time helps but is less impactful than cognitive skills.  
+- 4 distinct **learning personas** discovered, useful for targeted interventions.  
+- Random Forest outperforms Linear Regression with higher accuracy and generalization.  
 
-## Requirements
+---
 
-- Python 3.8+
-- pandas, numpy, scikit-learn, matplotlib, seaborn
-- Jupyter Notebook
-- Node.js 18+ (for dashboard)
+## 🛠️ Technology Stack  
 
-## License
+- **Frontend**: Next.js 15, React 18, TypeScript  
+- **Styling**: Tailwind CSS, shadcn/ui  
+- **Charts**: Recharts  
+- **Machine Learning**: Python (scikit-learn, pandas, numpy, matplotlib, seaborn)  
+- **Deployment**: Vercel  
 
-MIT License - Feel free to use this project for educational purposes.
+---
+
+## 👨‍💻 Author  
+
+**Your Full Name**  
+- GitHub: [@yourusername](https://github.com/yourusername)  
+- Project: Cognitive Skills & Student Performance Dashboard  
+
+---
+
+## 🙏 Acknowledgments  
+
+- **Next.js** team for the framework  
+- **Recharts** for visualization components  
+- **Tailwind CSS** + **shadcn/ui** for styling  
+- **scikit-learn** for machine learning models  
+- The **open-source community** for inspiration  
