@@ -50,13 +50,16 @@ cd igebra-cognitive-skills-dashboard
 npm install
 ```
 
-### 2. Run Dashboard  
+### 2. Run Dashboard
+
 ```bash
 npm run dev
 ```
-Visit → `http://localhost:3000`  
 
-### 3. Data Analysis (Python ML)  
+Visit → `http://localhost:3000`
+
+### 3. Data Analysis (Python ML)
+
 ```bash
 # Generate synthetic dataset
 python scripts/generate_dataset.py  
@@ -65,14 +68,15 @@ python scripts/generate_dataset.py
 jupyter notebook notebooks/analysis.ipynb
 ```
 
-### 4. Make Predictions  
+### 4. Make Predictions
+
 ```bash
 python src/predict.py examples/sample_input.json
 ```
 
 ---
 
-## 📁 Project Structure  
+## 📁 Project Structure
 
 ```
 igebra-cognitive-skills-dashboard/
@@ -92,47 +96,54 @@ igebra-cognitive-skills-dashboard/
 
 ---
 
-## 📊 Model Performance  
+## 📊 Model Performance
 
-- **Algorithm**: Random Forest Regressor  
-- **Metrics**: MAE, RMSE, R² with residual analysis  
-- **Top Predictors**: Comprehension, Retention  
-- **Clustering**: Distinct personas validated with silhouette score  
-
----
-
-## 🔎 Insights & Findings  
-
-- Comprehension & Retention most strongly drive academic outcomes.  
-- Engagement Time helps but is less impactful than cognitive skills.  
-- 4 distinct **learning personas** discovered, useful for targeted interventions.  
-- Random Forest outperforms Linear Regression with higher accuracy and generalization.  
+* **Algorithm**: Random Forest Regressor
+* **Metrics**: MAE, RMSE, R² with residual analysis
+* **Top Predictors**: Comprehension, Retention
+* **Clustering**: Distinct personas validated with silhouette score
 
 ---
 
-## 🛠️ Technology Stack  
+## 🔎 Insights & Findings
 
-- **Frontend**: Next.js 15, React 18, TypeScript  
-- **Styling**: Tailwind CSS, shadcn/ui  
-- **Charts**: Recharts  
-- **Machine Learning**: Python (scikit-learn, pandas, numpy, matplotlib, seaborn)  
-- **Deployment**: Vercel  
-
----
-
-## 👨‍💻 Author  
-
-**Jyothi Chowdary**  
-- GitHub: https://github.com/JyothiChowdaryB1165  
-- Project: Cognitive Skills & Student Performance Dashboard  
+* Comprehension & Retention most strongly drive academic outcomes.
+* Engagement Time helps but is less impactful than cognitive skills.
+* 4 distinct **learning personas** discovered, useful for targeted interventions.
+* Random Forest outperforms Linear Regression with higher accuracy and generalization.
 
 ---
 
-## 🙏 Acknowledgments  
+## 🛠️ Technology Stack
 
-- **Next.js** team for the framework  
-- **Recharts** for visualization components  
-- **Tailwind CSS** + **shadcn/ui** for styling  
-- **scikit-learn** for machine learning models  
-- The **open-source community** for inspiration  
+* **Frontend**: Next.js 15, React 18, TypeScript
+* **Styling**: Tailwind CSS, shadcn/ui
+* **Charts**: Recharts
+* **Machine Learning**: Python (scikit-learn, pandas, numpy, matplotlib, seaborn)
+* **Deployment**: Vercel
+
+---
+
+## 👨‍💻 Author
+
+**Jyothi Chowdary**
+
+* GitHub: [https://github.com/JyothiChowdaryB1165](https://github.com/JyothiChowdaryB1165)
+* Project: Cognitive Skills & Student Performance Dashboard
+
+---
+
+## 🙏 Acknowledgments
+
+* **Next.js** team for the framework
+* **Recharts** for visualization components
+* **Tailwind CSS** + **shadcn/ui** for styling
+* **scikit-learn** for machine learning models
+* The **open-source community** for inspiration
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
